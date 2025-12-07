@@ -1,0 +1,154 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11222.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{1DCE4CA8-2962-4E73-ACC8-9A460DC7C2C0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pbr_win32", "shared\pbr\pbr_win32.vcxproj", "{2B7688F8-9AE6-4A67-809B-1BAC82094F21}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XrSceneLib_win32", "shared\XrSceneLib\XrSceneLib_win32.vcxproj", "{A758AF22-F54F-4C74-BF85-05A377B5892E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6A3225A3-0750-47B7-8004-80CA543F8B8B} = {6A3225A3-0750-47B7-8004-80CA543F8B8B}
+		{2B7688F8-9AE6-4A67-809B-1BAC82094F21} = {2B7688F8-9AE6-4A67-809B-1BAC82094F21}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Gltf_win32", "shared\gltf\Gltf_win32.vcxproj", "{6A3225A3-0750-47B7-8004-80CA543F8B8B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pbr", "pbr", "{5CBE3AE5-D53F-40E2-9380-F6348A569040}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sampleShared", "sampleShared", "{279ABC91-3426-45B0-8876-113A48B7FB34}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XrUtility", "XrUtility", "{AF0F6DD8-1BC3-4818-919E-9B239B544B5E}"
+	ProjectSection(SolutionItems) = preProject
+		shared\XrUtility\XrDispatchTable.h = shared\XrUtility\XrDispatchTable.h
+		shared\XrUtility\XrEnumerate.h = shared\XrUtility\XrEnumerate.h
+		shared\XrUtility\XrError.h = shared\XrUtility\XrError.h
+		shared\XrUtility\XrExtensionContext.h = shared\XrUtility\XrExtensionContext.h
+		shared\XrUtility\XrExtensionDefined.h = shared\XrUtility\XrExtensionDefined.h
+		shared\XrUtility\XrGuid.h = shared\XrUtility\XrGuid.h
+		shared\XrUtility\XrHandle.h = shared\XrUtility\XrHandle.h
+		shared\XrUtility\XrListFunctions.h = shared\XrUtility\XrListFunctions.h
+		shared\XrUtility\XrMath.h = shared\XrUtility\XrMath.h
+		shared\XrUtility\XrPlatformDependencies.h = shared\XrUtility\XrPlatformDependencies.h
+		shared\XrUtility\XrSceneUnderstanding.h = shared\XrUtility\XrSceneUnderstanding.h
+		shared\XrUtility\XrSceneUnderstanding.hpp = shared\XrUtility\XrSceneUnderstanding.hpp
+		shared\XrUtility\XrSceneUnderstandingSerialization.hpp = shared\XrUtility\XrSceneUnderstandingSerialization.hpp
+		shared\XrUtility\XrSide.h = shared\XrUtility\XrSide.h
+		shared\XrUtility\XrSpatialGraphBridge.h = shared\XrUtility\XrSpatialGraphBridge.h
+		shared\XrUtility\XrStereoView.h = shared\XrUtility\XrStereoView.h
+		shared\XrUtility\XrString.h = shared\XrUtility\XrString.h
+		shared\XrUtility\XrStruct.h = shared\XrUtility\XrStruct.h
+		shared\XrUtility\XrToString.h = shared\XrUtility\XrToString.h
+		shared\XrUtility\XrUuid.h = shared\XrUtility\XrUuid.h
+		shared\XrUtility\XrViewConfiguration.h = shared\XrUtility\XrViewConfiguration.h
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SampleShared_win32", "shared\SampleShared\SampleShared_win32.vcxproj", "{269C12FA-E68D-470B-A734-4701034306BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "openxr", "openxr", "{FAD9AAA7-533C-4BFC-8F54-A1A855044CEF}"
+	ProjectSection(SolutionItems) = preProject
+		openxr_preview\include\openxr\openxr.h = openxr_preview\include\openxr\openxr.h
+		openxr_preview\include\openxr\openxr_platform.h = openxr_preview\include\openxr\openxr_platform.h
+		openxr_preview\include\openxr\openxr_platform_defines.h = openxr_preview\include\openxr\openxr_platform_defines.h
+		openxr_preview\include\openxr\openxr_reflection.h = openxr_preview\include\openxr\openxr_reflection.h
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gltf", "gltf", "{B447EDAD-798F-4A24-9FDA-667C468AF5D9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PSVR2EyeTrackingCalibration", "PSVR2EyeTrackingCalibration\PSVR2EyeTrackingCalibration.vcxproj", "{A4D2019B-622D-49B9-9510-16877979807A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B7688F8-9AE6-4A67-809B-1BAC82094F21}.Debug|ARM.ActiveCfg = Debug|ARM
+		{2B7688F8-9AE6-4A67-809B-1BAC82094F21}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{2B7688F8-9AE6-4A67-809B-1BAC82094F21}.Debug|x64.ActiveCfg = Debug|x64
+		{2B7688F8-9AE6-4A67-809B-1BAC82094F21}.Debug|x64.Build.0 = Debug|x64
+		{2B7688F8-9AE6-4A67-809B-1BAC82094F21}.Debug|x86.ActiveCfg = Debug|Win32
+		{2B7688F8-9AE6-4A67-809B-1BAC82094F21}.Debug|x86.Build.0 = Debug|Win32
+		{2B7688F8-9AE6-4A67-809B-1BAC82094F21}.Release|ARM.ActiveCfg = Release|ARM
+		{2B7688F8-9AE6-4A67-809B-1BAC82094F21}.Release|ARM64.ActiveCfg = Release|ARM64
+		{2B7688F8-9AE6-4A67-809B-1BAC82094F21}.Release|x64.ActiveCfg = Release|x64
+		{2B7688F8-9AE6-4A67-809B-1BAC82094F21}.Release|x64.Build.0 = Release|x64
+		{2B7688F8-9AE6-4A67-809B-1BAC82094F21}.Release|x86.ActiveCfg = Release|Win32
+		{2B7688F8-9AE6-4A67-809B-1BAC82094F21}.Release|x86.Build.0 = Release|Win32
+		{A758AF22-F54F-4C74-BF85-05A377B5892E}.Debug|ARM.ActiveCfg = Debug|ARM
+		{A758AF22-F54F-4C74-BF85-05A377B5892E}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{A758AF22-F54F-4C74-BF85-05A377B5892E}.Debug|x64.ActiveCfg = Debug|x64
+		{A758AF22-F54F-4C74-BF85-05A377B5892E}.Debug|x64.Build.0 = Debug|x64
+		{A758AF22-F54F-4C74-BF85-05A377B5892E}.Debug|x86.ActiveCfg = Debug|Win32
+		{A758AF22-F54F-4C74-BF85-05A377B5892E}.Debug|x86.Build.0 = Debug|Win32
+		{A758AF22-F54F-4C74-BF85-05A377B5892E}.Release|ARM.ActiveCfg = Release|ARM
+		{A758AF22-F54F-4C74-BF85-05A377B5892E}.Release|ARM64.ActiveCfg = Release|ARM64
+		{A758AF22-F54F-4C74-BF85-05A377B5892E}.Release|x64.ActiveCfg = Release|x64
+		{A758AF22-F54F-4C74-BF85-05A377B5892E}.Release|x64.Build.0 = Release|x64
+		{A758AF22-F54F-4C74-BF85-05A377B5892E}.Release|x86.ActiveCfg = Release|Win32
+		{A758AF22-F54F-4C74-BF85-05A377B5892E}.Release|x86.Build.0 = Release|Win32
+		{6A3225A3-0750-47B7-8004-80CA543F8B8B}.Debug|ARM.ActiveCfg = Debug|ARM
+		{6A3225A3-0750-47B7-8004-80CA543F8B8B}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{6A3225A3-0750-47B7-8004-80CA543F8B8B}.Debug|x64.ActiveCfg = Debug|x64
+		{6A3225A3-0750-47B7-8004-80CA543F8B8B}.Debug|x64.Build.0 = Debug|x64
+		{6A3225A3-0750-47B7-8004-80CA543F8B8B}.Debug|x86.ActiveCfg = Debug|Win32
+		{6A3225A3-0750-47B7-8004-80CA543F8B8B}.Debug|x86.Build.0 = Debug|Win32
+		{6A3225A3-0750-47B7-8004-80CA543F8B8B}.Release|ARM.ActiveCfg = Release|ARM
+		{6A3225A3-0750-47B7-8004-80CA543F8B8B}.Release|ARM64.ActiveCfg = Release|ARM64
+		{6A3225A3-0750-47B7-8004-80CA543F8B8B}.Release|x64.ActiveCfg = Release|x64
+		{6A3225A3-0750-47B7-8004-80CA543F8B8B}.Release|x64.Build.0 = Release|x64
+		{6A3225A3-0750-47B7-8004-80CA543F8B8B}.Release|x86.ActiveCfg = Release|Win32
+		{6A3225A3-0750-47B7-8004-80CA543F8B8B}.Release|x86.Build.0 = Release|Win32
+		{269C12FA-E68D-470B-A734-4701034306BD}.Debug|ARM.ActiveCfg = Debug|ARM
+		{269C12FA-E68D-470B-A734-4701034306BD}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{269C12FA-E68D-470B-A734-4701034306BD}.Debug|x64.ActiveCfg = Debug|x64
+		{269C12FA-E68D-470B-A734-4701034306BD}.Debug|x64.Build.0 = Debug|x64
+		{269C12FA-E68D-470B-A734-4701034306BD}.Debug|x86.ActiveCfg = Debug|Win32
+		{269C12FA-E68D-470B-A734-4701034306BD}.Debug|x86.Build.0 = Debug|Win32
+		{269C12FA-E68D-470B-A734-4701034306BD}.Release|ARM.ActiveCfg = Release|ARM
+		{269C12FA-E68D-470B-A734-4701034306BD}.Release|ARM64.ActiveCfg = Release|ARM64
+		{269C12FA-E68D-470B-A734-4701034306BD}.Release|x64.ActiveCfg = Release|x64
+		{269C12FA-E68D-470B-A734-4701034306BD}.Release|x64.Build.0 = Release|x64
+		{269C12FA-E68D-470B-A734-4701034306BD}.Release|x86.ActiveCfg = Release|Win32
+		{269C12FA-E68D-470B-A734-4701034306BD}.Release|x86.Build.0 = Release|Win32
+		{A4D2019B-622D-49B9-9510-16877979807A}.Debug|ARM.ActiveCfg = Debug|x64
+		{A4D2019B-622D-49B9-9510-16877979807A}.Debug|ARM.Build.0 = Debug|x64
+		{A4D2019B-622D-49B9-9510-16877979807A}.Debug|ARM64.ActiveCfg = Debug|x64
+		{A4D2019B-622D-49B9-9510-16877979807A}.Debug|ARM64.Build.0 = Debug|x64
+		{A4D2019B-622D-49B9-9510-16877979807A}.Debug|x64.ActiveCfg = Debug|x64
+		{A4D2019B-622D-49B9-9510-16877979807A}.Debug|x64.Build.0 = Debug|x64
+		{A4D2019B-622D-49B9-9510-16877979807A}.Debug|x86.ActiveCfg = Debug|Win32
+		{A4D2019B-622D-49B9-9510-16877979807A}.Debug|x86.Build.0 = Debug|Win32
+		{A4D2019B-622D-49B9-9510-16877979807A}.Release|ARM.ActiveCfg = Release|x64
+		{A4D2019B-622D-49B9-9510-16877979807A}.Release|ARM.Build.0 = Release|x64
+		{A4D2019B-622D-49B9-9510-16877979807A}.Release|ARM64.ActiveCfg = Release|x64
+		{A4D2019B-622D-49B9-9510-16877979807A}.Release|ARM64.Build.0 = Release|x64
+		{A4D2019B-622D-49B9-9510-16877979807A}.Release|x64.ActiveCfg = Release|x64
+		{A4D2019B-622D-49B9-9510-16877979807A}.Release|x64.Build.0 = Release|x64
+		{A4D2019B-622D-49B9-9510-16877979807A}.Release|x86.ActiveCfg = Release|Win32
+		{A4D2019B-622D-49B9-9510-16877979807A}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2B7688F8-9AE6-4A67-809B-1BAC82094F21} = {5CBE3AE5-D53F-40E2-9380-F6348A569040}
+		{A758AF22-F54F-4C74-BF85-05A377B5892E} = {1DCE4CA8-2962-4E73-ACC8-9A460DC7C2C0}
+		{6A3225A3-0750-47B7-8004-80CA543F8B8B} = {B447EDAD-798F-4A24-9FDA-667C468AF5D9}
+		{5CBE3AE5-D53F-40E2-9380-F6348A569040} = {1DCE4CA8-2962-4E73-ACC8-9A460DC7C2C0}
+		{279ABC91-3426-45B0-8876-113A48B7FB34} = {1DCE4CA8-2962-4E73-ACC8-9A460DC7C2C0}
+		{AF0F6DD8-1BC3-4818-919E-9B239B544B5E} = {1DCE4CA8-2962-4E73-ACC8-9A460DC7C2C0}
+		{269C12FA-E68D-470B-A734-4701034306BD} = {279ABC91-3426-45B0-8876-113A48B7FB34}
+		{B447EDAD-798F-4A24-9FDA-667C468AF5D9} = {1DCE4CA8-2962-4E73-ACC8-9A460DC7C2C0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6883759C-1988-4CF6-8FDF-9FF149924A59}
+	EndGlobalSection
+EndGlobal
