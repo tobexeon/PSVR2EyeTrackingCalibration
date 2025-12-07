@@ -1,6 +1,6 @@
 # PSVR2 EyeTracking Calibration
 
-This is the client application for PSVR2 eye tracking calibration. The generated calibration data is applied **in real-time** by the modified PSVR2Toolkit. There is **NO** need to restart SteamVR to apply new calibration offsets. This project is adapted from the [OpenXR Samples for Mixed Reality Developers](https://github.com/microsoft/OpenXR-MixedReality-Samples) by Microsoft.
+This is the client application for PSVR2 eye tracking calibration. The generated calibration data is applied **in real-time** by the modified PSVR2Toolkit. There is **NO** need to restart SteamVR to apply new calibration offsets. This project is adapted from the [OpenXR Samples for Mixed Reality Developers](https://github.com/microsoft/OpenXR-MixedReality) by Microsoft.
 
 ## Important Notes & Compatibility
 
